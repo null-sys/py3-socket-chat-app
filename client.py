@@ -13,4 +13,4 @@ data,server = s.recvfrom(MAX_SIZE_BYTES)
 
 recv_msg = data.decode('ascii')
 
-print('The server at {} says {!r}'.format(server, message))
+print('The server at {} says {!r}'.format(server,recv_msg))

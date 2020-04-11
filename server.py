@@ -14,6 +14,6 @@ while True:  #server is always listening
 	data, client = s.recvfrom(MAX_SIZE_BYTES)
 	msg = data.decode('ascii')
 	upperMsg = msg.upper()
-	print('The client at {} says {!r}'.format(clientAddress, message))
+	print('The client at {} says {!r}'.format(client, msg))
 	reply = upperMsg.encode('ascii')
 	s.sendto(reply,client)
